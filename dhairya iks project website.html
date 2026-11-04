@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AyurvedaAI — an educational IKS project exploring Ayurvedic knowledge through responsible AI and web technology.">
+<title>AyurvedaAI | IKS Project</title>
+<style>
+:root{--green:#245b40;--deep:#173f30;--mint:#e8f2e8;--gold:#c18b42;--ink:#20352a;--muted:#64756b;--paper:#fbfaf4;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:#fffdf8ee;backdrop-filter:blur(10px);border-bottom:1px solid #e4e8df}
+.navwrap{max-width:1120px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:800;font-size:21px;color:var(--green);text-decoration:none}.brand span{margin-right:7px}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:var(--green)}
+.hero{max-width:1120px;margin:28px auto 0;padding:58px 32px;border-radius:24px;background:linear-gradient(120deg,#173f30,#387653);color:white;position:relative;overflow:hidden}
+.hero:after{content:"🌿";position:absolute;font-size:180px;right:7%;bottom:-35px;opacity:.15}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#d1e9d3;font-weight:bold}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.06;max-width:700px;margin:14px 0}.hero p{max-width:620px;color:#e5f0e7;font-size:17px}
+.btn{display:inline-block;border:0;border-radius:10px;padding:12px 18px;background:#d7ebd7;color:#17462e;font-weight:700;text-decoration:none;cursor:pointer;margin:8px 8px 0 0}.btn.outline{background:transparent;color:white;border:1px solid #ffffff90}
+.container{max-width:1120px;margin:0 auto;padding:48px 22px}.section-head{margin-bottom:22px}.section-head small{color:var(--gold);font-weight:bold;letter-spacing:1.5px;text-transform:uppercase}.section-head h2{font-size:30px;color:var(--green);margin:5px 0}.section-head p{color:var(--muted);max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:white;border:1px solid #e4e9df;border-radius:16px;padding:20px;box-shadow:0 5px 18px #1c43200a}.icon{font-size:30px}.card h3{margin:8px 0 5px;color:var(--green)}.muted{color:var(--muted);font-size:14px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.soft{background:var(--mint);border-radius:18px;padding:24px}.soft h3{color:var(--green);margin-top:0}
+.herbs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.herb{cursor:pointer;border:1px solid #e2e9df;background:white;border-radius:16px;padding:18px;text-align:left;color:var(--ink)}.herb:hover{border-color:var(--green);transform:translateY(-2px)}.herb .icon{font-size:34px}.herb strong{display:block;color:var(--green);font-size:18px}
+input,select{padding:12px 14px;border:1px solid #d8e0d6;border-radius:10px;font:inherit;background:white;max-width:100%}.search{width:100%;margin:8px 0 18px}
+.chat{background:white;border:1px solid #e2e9df;border-radius:16px;padding:18px}.messages{height:240px;overflow:auto;background:#f7faf5;border-radius:12px;padding:12px;margin-bottom:12px}.bubble{padding:10px 13px;border-radius:12px;margin:7px 0;max-width:88%;font-size:14px}.bot{background:#e4f1e4}.user{background:#dcebe9;margin-left:auto}.chatrow{display:flex;gap:8px}.chatrow input{flex:1;min-width:0}
+.sources a{color:var(--green);font-weight:bold}.notice{font-size:13px;background:#fff5df;border-left:4px solid var(--gold);padding:13px 16px;border-radius:8px}
+footer{background:var(--deep);color:white;text-align:center;padding:32px 20px}footer p{color:#d4e5d7;font-size:14px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.herbs{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}nav{gap:10px}.navwrap{align-items:flex-start;flex-direction:column}.hero{margin:16px 12px 0;padding:40px 22px}}
+@media(max-width:480px){.grid,.herbs{grid-template-columns:1fr 1fr}.container{padding:35px 15px}.hero{padding:34px 18px}nav a{font-size:12px}}
+</style>
+</head>
+<body>
+<header><div class="navwrap">
+<a class="brand" href="#home"><span>🌿</span>AyurvedaAI</a>
+<nav><a href="#home">Home</a><a href="#about">About</a><a href="#library">Plant Library</a><a href="#assistant">AI Assistant</a><a href="#research">Research</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home">
+<div class="eyebrow">Indian Knowledge Systems × Modern Technology</div>
+<h1>Ancient Wisdom.<br>Smarter Future.</h1>
+<p>Exploring India's traditional Ayurvedic knowledge through a modern, accessible and responsible digital platform.</p>
+<a class="btn" href="#library">Explore Herbal Library →</a><a class="btn outline" href="#about">Discover Our Project</a>
+</section>
+<section class="container" id="about">
+<div class="section-head"><small>Our concept</small><h2>Why AyurvedaAI?</h2><p>Traditional knowledge is valuable, but reliable information can be difficult to find and understand. Our project explores how web technology and AI can help organize and explain this knowledge responsibly.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📜</div><h3>Ancient Knowledge</h3><p class="muted">Learn about India's traditional knowledge heritage.</p></div>
+<div class="card"><div class="icon">🤖</div><h3>Modern AI</h3><p class="muted">Explore how AI can make information easier to understand.</p></div>
+<div class="card"><div class="icon">🌱</div><h3>Herbal Library</h3><p class="muted">Browse selected plants and their traditional context.</p></div>
+<div class="card"><div class="icon">🔎</div><h3>Trusted Sources</h3><p class="muted">Find references and distinguish evidence from traditional claims.</p></div>
+</div>
+</section>
+<section class="container" style="background:#f0f5ed" id="library">
+<div class="section-head"><small>Explore & learn</small><h2>Ayurvedic Plant Library</h2><p>Educational summaries of selected plants. Select a card to read more.</p></div>
+<input class="search" id="plantSearch" placeholder="Search Tulsi, Neem, Amla..." aria-label="Search plants">
+<div class="herbs" id="herbs"></div>
+<div class="card" id="plantDetail" style="display:none;margin-top:16px"></div>
+</section>
+<section class="container" id="assistant">
+<div class="section-head"><small>Interactive demo</small><h2>AyurvedaAI Assistant</h2><p>Ask general educational questions about Ayurveda, IKS and selected plants.</p></div>
+<div class="chat"><div class="messages" id="messages"><div class="bubble bot">Namaste! 🙏 I am the AyurvedaAI educational demo. Ask me about Ayurveda, IKS, Tulsi, Neem, Amla or turmeric.</div></div>
+<div class="chatrow"><input id="question" placeholder="Type your question..." aria-label="Ask a question"><button class="btn" id="send" style="margin:0;background:#245b40;color:white">Send</button></div>
+<p class="muted">Demo assistant with prepared educational responses; it is not connected to a live AI service.</p></div>
+</section>
+<section class="container" id="research">
+<div class="section-head"><small>IKS research</small><h2>Research, Vision & Objectives</h2></div>
+<div class="split">
+<div class="soft"><h3>Our Vision</h3><p>To connect India's traditional Ayurvedic knowledge with modern technology and make credible information easier to access.</p><h3>Our Mission</h3><p>To develop a user-friendly digital platform that organizes traditional knowledge, presents reliable sources and demonstrates responsible AI.</p></div>
+<div class="card"><h3>Our Objectives</h3><ol><li>Digitize selected traditional Ayurvedic information.</li><li>Build an easy-to-use herbal knowledge library.</li><li>Demonstrate AI-assisted educational answers.</li><li>Provide references and distinguish traditional uses from scientific evidence.</li><li>Evaluate the website with student feedback.</li></ol></div>
+</div>
+<div class="section-head" style="margin-top:35px"><small>Further reading</small><h2>Research Sources</h2></div>
+<div class="grid sources">
+<div class="card"><h3>Ministry of AYUSH</h3><p class="muted">Government information on traditional systems of medicine.</p><a href="https://ayush.gov.in/" target="_blank" rel="noopener">Official website ↗</a></div>
+<div class="card"><h3>CCRAS</h3><p class="muted">Central Council for Research in Ayurvedic Sciences.</p><a href="https://ccras.nic.in/" target="_blank" rel="noopener">Research website ↗</a></div>
+<div class="card"><h3>PubMed</h3><p class="muted">Search biomedical and scientific research literature.</p><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">Search papers ↗</a></div>
+<div class="card"><h3>WHO</h3><p class="muted">Global resources on traditional, complementary and integrative medicine.</p><a href="https://www.who.int/health-topics/traditional-complementary-and-integrative-medicine" target="_blank" rel="noopener">WHO resources ↗</a></div>
+</div>
+<div class="notice" style="margin-top:22px"><strong>Safety note:</strong> This is an educational IKS project, not a medical advice or diagnosis service. Traditional use does not establish safety or effectiveness. Consult a qualified healthcare professional for health concerns.</div>
+</section>
+</main>
+<footer><div style="font-size:28px">🌿</div><strong>AyurvedaAI — Ancient Roots. Smart Solutions.</strong><p>IKS Web Development Project | MIT ADT PUNE</p><p>Team members: Add your team names here.</p></footer>
+<script>
+const plants=[
+{name:"Tulsi",sci:"Ocimum tenuiflorum",emoji:"🌿",part:"Leaves",trad:"Tulsi has an important place in Indian household traditions and Ayurveda. It is traditionally described in relation to respiratory and general wellness contexts.",safety:"Traditional descriptions are not proof that Tulsi treats or prevents a disease."},
+{name:"Neem",sci:"Azadirachta indica",emoji:"🍃",part:"Leaves, bark and seeds",trad:"Neem has a history of traditional use in Indian practices, including skin and oral-care contexts.",safety:"Neem preparations can have safety concerns. Do not ingest or use as treatment without professional advice."},
+{name:"Amla",sci:"Phyllanthus emblica",emoji:"🟢",part:"Fruit",trad:"Amla is used in traditional Ayurvedic preparations and is a food source of vitamin C.",safety:"Nutritional content does not establish that it can treat a medical condition."},
+{name:"Turmeric",sci:"Curcuma longa",emoji:"🟠",part:"Rhizome",trad:"Turmeric is widely used as a culinary spice and has a history in traditional practices. Curcumin is studied in scientific research.",safety:"Research findings vary; supplements may interact with medicines."},
+{name:"Ashwagandha",sci:"Withania somnifera",emoji:"🌱",part:"Root",trad:"Ashwagandha is mentioned in Ayurvedic traditions and has been studied for several wellness-related questions.",safety:"It is not suitable for everyone and may interact with medicines. Seek professional advice."},
+{name:"Ginger",sci:"Zingiber officinale",emoji:"🫚",part:"Rhizome",trad:"Ginger is a common food ingredient with a long history in traditional food and wellness practices.",safety:"Food use and medicinal-dose use are different. High doses may not suit everyone."}
+];
+const herbs=document.getElementById('herbs'),detail=document.getElementById('plantDetail');
+function render(q=""){herbs.innerHTML="";plants.filter(p=>(p.name+" "+p.sci).toLowerCase().includes(q.toLowerCase())).forEach(p=>{const b=document.createElement('button');b.className='herb';b.innerHTML=`<span class="icon">${p.emoji}</span><strong>${p.name}</strong><span class="muted"><i>${p.sci}</i></span><span class="muted" style="display:block;margin-top:8px">View details →</span>`;b.onclick=()=>{detail.style.display="block";detail.innerHTML=`<h3 style="color:#245b40">${p.emoji} ${p.name}</h3><p><i>${p.sci}</i></p><p><b>Plant part:</b> ${p.part}</p><p>${p.trad}</p><p class="muted"><b>Safety & evidence:</b> ${p.safety}</p>`;detail.scrollIntoView({behavior:"smooth",block:"nearest"})};herbs.appendChild(b)});if(!herbs.children.length)herbs.textContent="No plants found."}
+render();document.getElementById('plantSearch').addEventListener('input',e=>render(e.target.value));
+const answers=[
+[/ayurveda|आयुर्वेद/i,"Ayurveda is a traditional system of health knowledge that developed in India. It considers lifestyle, diet and wellbeing and is an important part of India's traditional knowledge heritage."],
+[/tulsi|तुलसी/i,"Tulsi (Ocimum tenuiflorum) has an important place in Indian traditions and Ayurveda. Its leaves are used in traditional practices. This does not mean it is a proven treatment for an illness."],
+[/neem|नीम/i,"Neem (Azadirachta indica) has a history of traditional use, including skin and oral-care contexts. Some preparations may be harmful, so do not self-medicate."],
+[/amla|आंवला/i,"Amla (Phyllanthus emblica) is a traditional food and Ayurvedic ingredient. It is known for its vitamin C content."],
+[/turmeric|हल्दी/i,"Turmeric (Curcuma longa) is used in food and traditional practices. Curcumin is studied in research, but findings should not be treated as proof of a cure."],
+[/iks|indian knowledge/i,"IKS stands for Indian Knowledge Systems. It includes India's diverse traditional knowledge, sciences, arts, philosophies and practices. Ayurveda is one part of this heritage."],
+[/ai|artificial intelligence/i,"AI can help organize information, understand questions and explain retrieved content. It can also make mistakes, so answers need reliable references and human review."],
+[/charaka|चरक/i,"Charaka Samhita is a classical Ayurvedic text associated with the tradition of Ayurveda and an important source for studying historical Ayurvedic concepts."]
+];
+function send(){const input=document.getElementById('question'),q=input.value.trim();if(!q)return;const box=document.getElementById('messages');const u=document.createElement('div');u.className='bubble user';u.textContent=q;box.appendChild(u);const match=answers.find(a=>a[0].test(q));const b=document.createElement('div');b.className='bubble bot';b.textContent=match?match[1]:"I can answer general educational questions about Ayurveda, IKS, Tulsi, Neem, Amla, turmeric and AI. Try one of these topics. This demo is not a medical advice tool.";box.appendChild(b);input.value="";box.scrollTop=box.scrollHeight}
+document.getElementById('send').addEventListener('click',send);document.getElementById('question').addEventListener('keydown',e=>{if(e.key==='Enter')send()});
+</script>
+</body>
+</html>
